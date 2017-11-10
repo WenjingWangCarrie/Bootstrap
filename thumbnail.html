@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Thumbnail</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</head>
+
+<body>
+	<div class="container">
+		<ul class="breadcrumb">
+            <li><a href="C:\home\wenjing\Bootstrap\home.html">Home</a></li>
+            <li><a href="C:\home\wenjing\Bootstrap\bootstrap_exer.html">Basic</a></li>
+            <li><a href="C:\home\wenjing\Bootstrap\example.html">Collapse</a></li>
+            <li class="active">Imagine</li>
+            <li><a href="C:\home\wenjing\Bootstrap\scrollSection.html">Scroll</a></li>
+        </ul>
+    </div>
+
+    <div class="container">
+    	<h2>Programming Language Gallery</h2>
+    	<p>The .thumbnail class can be use dto display an image gallery.</p>
+    	<p>The .caption class adds proper padding and a dark grey color to text inside thumbnails.</p>
+    	<p>Click on the images to enlarge them.</p>
+
+    	<hr>
+
+    	<div class="row">
+    		<div class="col-md-3">
+    			<ul class="nav nav-pills nav-stacked">
+    				<li class="active"><a data-toggle="tab" href="#oo">OO Language</a></li>
+    				<li><a data-toggle="tab" href="#web">Web Programming</a></li>
+    				<li><a data-toggle="tab" href="#query">Query Language</a></li>
+    		    </ul>
+    		</div>
+
+    		<div class="tab-content">
+    			<div id="oo" class="tab-pane fade in active">
+    				<div class="col-md-3">
+    					<div class="thumbnail">
+    						<a href="images/csharp.jpg" target="_blank">
+    							<img src="images/csharp.jpg" alt="C#" style="width:100%;">
+    							<div class="caption">
+    								<p>C# is a multi-paradigm programming language encompassing strong typing, imperative, declarative, functional, generic, object-oriented, and component-oriented programming disciplines.</p>
+    							</div>
+    						</a>
+    					</div>
+    				</div>
+
+    				<div class="col-md-3">
+    					<div class="thumbnail">
+    						<a href="images/python.jpg" target="_blank">
+    							<img src="images/python.jpg" alt="Python" style="width:100%;">
+    							<div class="caption">
+    								<p>Python is a widely used high-level programming language for general-purpose programming, created by Guido van Rossum and first released in 1991.</p>
+    							</div>
+    						</a>
+    					</div>
+    				</div>
+
+    				<div class="col-md-3">
+    					<div class="thumbnail">
+    						<a href="images/c.jpg" target="_blank">
+    							<img src="images/c.jpg" alt="Plum Flower" style="width:100%;">
+    							<div class="caption">
+    								<p>C is a general-purpose, imperative computer programming language, supporting structured programming, lexical variable scope and recursion, while a static type system prevents many unintended operations. </p>
+    							</div>
+    						</a>
+    					</div>
+    				</div>
+
+    			</div> <!-- end of id:flower -->
+
+    			<div id="web" class="tab-pane fade">
+    				<div class="col-md-3">
+    					<div class="thumbnail">
+    						<a href="images/angularMaterial.png" target="_blank">
+    							<img src="images/angularMaterial.png" alt="Angular Material" style="width:100%;">
+    							<div class="caption">
+    								<p>AngularJS Material is both a UI Component framework and a reference implementation of Google's Material Design Specification.</p>
+    							</div>
+    						</a>
+    					</div>
+    				</div>
+
+    				<div class="col-md-3">
+    					<div class="thumbnail">
+    						<a href="images/xml.jpg" target="_blank">
+    							<img src="images/xml.jpg" alt="XML" style="width:100%;">
+    							<div class="caption">
+    								<p>In computing, Extensible Markup Language is a markup language that defines a set of rules for encoding documents in a format that is both human-readable and machine-readable.</p>
+    							</div>
+    						</a>
+    					</div>
+    				</div>
+
+    				<div class="col-md-3">
+    					<div class="thumbnail">
+    						<a href="images/php.jpg" target="_blank">
+    							<img src="images/php.jpg" alt="PHP" style="width:100%;">
+    							<div class="caption">
+    								<p>PHP is a server-side scripting language designed primarily for web development but also used as a general-purpose programming language.</p>
+    							</div>
+    						</a>
+    					</div>
+    				</div>
+
+    			</div> <!-- end of id:animal -->
+
+    			<div id="query" class="tab-pane fade">
+    				<div class="col-md-3">
+    					<div class="thumbnail">
+    						<a href="images/db.png" target="_blank">
+    							<img src="images/db.png" alt="DbVisualizer" style="width:100%;">
+    							<div class="caption">
+    								<p>DbVisualizer is the universal database tool for developers,  DBAs and analysts. It is the perfect solution since the same tool can be used on all major operating systems accessing a wide range of databases.</p>
+    							</div>
+    						</a>
+    					</div>
+    				</div>
+
+    				<div class="col-md-3">
+    					<div class="thumbnail">
+    						<a href="images/oracleSql.jpg" target="_blank">
+    							<img src="images/oracleSql.jpg" alt="ORACLE SQL" style="width:100%;">
+    							<div class="caption">
+    								<p>Oracle SQL Developer is an Integrated development environment for working with SQL in Oracle databases. Oracle Corporation provides this product free; it uses the Java Development Kit.</p>
+    							</div>
+    						</a>
+    					</div>
+    				</div>
+
+    				<div class="col-md-3">
+    					<div class="thumbnail">
+    						<a href="images/mango.png" target="_blank">
+    							<img src="images/mango.png" alt="MangoDB" style="width:100%;">
+    							<div class="caption">
+    								<p>MongoDB is a free and open-source cross-platform document-oriented database program. Classified as a NoSQL database program, MongoDB uses JSON-like documents with schemas. </p>
+    							</div>
+    						</a>
+    					</div>
+    				</div>
+
+    			</div> <!-- end of id:human -->
+    		</div> <!-- end of tab-content -->
+
+    	</div> <!-- end of row -->
+    </div>
+
+</body>
+</html>
+
