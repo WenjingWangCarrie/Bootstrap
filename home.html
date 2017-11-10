@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Bootstrap Home</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <style>
+    .affix {
+    	top:0;
+    	width:100%;
+    }
+    .contain-fluid {
+    	padding:60px 50px;
+    }
+    body {
+    	position:relative;
+    }
+    .affix ~ .container-fluid {
+    	position:absolute;
+    	bottom:0;
+    	display:inline-block;
+    }
+    </style>
+</head>
+
+<body id="myPage" data-spy="scroll" data-target=".navbar" data-offset="50"> 
+	<nav class="navbar navbar-inverse" data-spy="affix" data-offset-top="197">
+		<div class="container-fluid">
+			<div class="navbar-header">
+				<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</button>
+				<a class="navbar-brand" href="C:\home\wenjing\Bootstrap\bootstrap_exer.html">Bootsrtap</a>
+			</div>
+
+			<div class="collapse navbar-collapse" id="myNavbar">
+					<ul class="nav navbar-nav">
+					<li class="active"><a href="C:\home\wenjing\Bootstrap\home.html">Home</a></li>
+					<li class="dropdown">
+						<a class="dropdown-toggle" data-toggle="dropdown" href="#">HTML
+							<span class="caret"></span>
+						</a>
+						<ul class="dropdown-menu">
+							<li><a href="http://www.tutorialspoint.com/html/">HTML TutorialsPoint</a></li>
+							<li><a href="http://htmldog.com/guides/html/intermediate/">HTML Dog</a></li>
+							<li><a href="https://www.w3schools.com/html/default.asp">HTML w3schools</a></li>
+						</ul>
+					</li>
+					<li class="dropdown">
+						<a class="dropdown-toggle" data-toggle="dropdown" href="#">CSS
+							<span class="caret"></span>
+						</a>
+						<ul class="dropdown-menu">
+							<li><a href="http://htmldog.com/guides/css/intermediate/">CSS Dog</a></li>
+							<li><a href="https://www.w3schools.com/css/default.asp">CSS w3schools</a></li>
+						</ul>
+					</li>
+					<li class="dropdown">
+						<a class="dropdown-toggle" data-toggle="dropdown" href="#">      JavaScript<span class="caret"></span>
+						</a>
+                        <ul class="dropdown-menu">
+							<li><a href="https://en.wikipedia.org/wiki/JavaScript">JS Wikipedia</a></li>
+							<li><a href="https://www.w3schools.com/js/"> JS w3schools</a></li>
+						</ul>
+					</li>
+					<li><a href="C:\home\wenjing\Bootstrap\blog.html">Blogs</a></li>
+					<li><a href="C:\home\wenjing\Bootstrap\survey.html">Survey</a></li>
+				</ul>
+
+				<form class="navbar-form navbar-left">
+					<div class="form-group">
+						<input type="text" class="form-control" placeholder="Search">
+					</div>
+					<button type="submit" class="btn btn-default">
+						<i class="glyphicon glyphicon-search"></i>
+					</button>
+				</form>
+
+				<ul class="nav navbar-nav navbar-right">
+					<li><a href="C:\home\wenjing\Bootstrap\signup.html"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
+					<li><a href="C:\home\wenjing\Bootstrap\login.html"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+				</ul>
+			</div>
+
+		</div>
+	</nav>
+
+	<div class="container">
+		<!-- Trigger the midal with a button -->
+		<button type="button" class="btn btn-danger btn-lg center-block" data-toggle="modal" data-target="#myModal">Introduction</button>
+
+		<!-- Modal -->
+		<div class="modal fade" id="myModal">
+			<div class="modal-dialog">
+
+				<!-- Modal content -->
+				<div class="modal-content">
+					<div class="modal-header">
+						<button type="button" class="close" data-dismiss="modal">&times;</button>
+						<h4 class="modal-title">Welome</h4>
+					</div>
+					<div class="modal-body">
+						<p>Welcome to Bootstrap tutorials website! There are many introduction and tutorials for different programming languages.</p>
+					</div>
+					<div class="modal-footer">
+						<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+					</div>
+				</div> <!-- end of modal content -->
+
+			</div>
+		</div> <!-- end of modal -->
+	</div>
+
+	<hr><br>
+	<p style="font-size:16px; margin-left:300px"><strong>The following carousel slides provide the hign level web-based programming languages.</strong></p>
+	<br>
+
+	<div class="container">
+		<div id="myCarousel" class="carousel slide" data-ride="carousel">
+			<!-- Indicators: little dots at the bottom-->
+			<ol class="carousel-indicators">
+				<li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+				<li data-target="#myCarousel" data-slide-to="1"></li>
+				<li data-target="#myCarousel" data-slide-to="2"></li>
+			</ol>
+
+			<!-- Wrapper for slides -->
+			<div class="carousel-inner">
+				<div class="item active">
+					<a href="http://www.tutorialspoint.com/html/"><img src="images/html.jpg" alt="HTML" style="width:100%";></a>
+					<div class="carousel-caption">
+						<h3>HTML</h3>
+						<p>Hypertext Markup Language (HTML) is the standard markup language for creating web pages and web applications. With Cascading Style Sheets (CSS) and JavaScript it forms a triad of cornerstone technologies for the World Wide Web.</p> 
+					</div>
+				</div>
+				<div class="item">
+					<a href="https://www.w3schools.com/css/default.asp"><img src="images/css.png" alt="CSS" style="width:100%";></a>
+					<div class="carousel-caption">
+						<h3>CSS</h3>
+						<p>Cascading Style Sheets (CSS) is a style sheet language used for describing the presentation of a document written in a markup language.</p>
+					</div>
+				</div>
+				<div class="item">
+					<a href="https://www.w3schools.com/bootstrap/default.asp"><img src="images/bootstrap.jpg" alt="Bootstrap" style="width:100%";></a>
+					<div class="carousel-caption">
+						<h3>Bootstrap</h3>
+						<p>Bootstrap is the most popular HTML, CSS, and JavaScript framework for developing responsive, mobile-first web sites.</p>
+					</div>
+				</div>
+			</div>
+
+			<!-- Left and right controls -->
+			<a class="left carousel-control" href="#myCarousel" data-slide="prev">
+				<span class="glyphicon glyphicon-chevron-left"></span>
+				<span class="sr-only">Previous</span>
+			</a>
+			<a class="right carousel-control" href="#myCarousel" data-slide="next">
+				<span class="glyphicon glyphicon-chevron-right"></span>
+				<span class="sr-only">Next</span>
+			</a>
+		</div>
+	</div>
+
+	<br><br>
+
+	<div id="contact" class="container">
+		<h2 class="text-center" style="font-family: Montserrat;">Contact</h2><br>
+		<div class="row">
+			<div class="col-sm-5">
+				<p>Contact us and we will get back within 24 hours.</p>
+				<p><span class="glyphicon glyphicon-map-marker"></span> Ottawa, Canada</p>
+				<p><span class="glyphicon glyphicon-phone"></span> +16131234567</p>
+				<p><span class="glyphicon glyphicon-envelope"></span> example@gmail.com</p>
+			</div>
+
+			<div class="col-sm-7">
+				<div class="row">
+					<div class="col-sm-6 form-group">
+						<input class="form-control" name="name" id="name" placeholder="Enter Name" type="text" required>
+					</div>
+					<div class="col-sm-6 form-group">
+						<input class="form-control" name="email" id="email" placeholder="Enter Email" type="email" required>
+					</div>
+				</div>
+
+				<textarea class="form-control" id="comments" name="comments" placeholder="Comments..." rows="5"></textarea> <br>
+
+				<div class="row">
+					<div class="col-md-12 form-group">
+						<button class="btn btn-default pull-right" type="submit">Send</button>
+					</div>
+				</div>
+
+			</div>
+		</div>
+	</div>
+
+	<footer class="text-center">
+		<a class="up-arrow" href="#myPage" data-toggle="tooltip" title="TO TOP">
+			<span class="glyphicon glyphicon-chevron-up"></span>
+		</a>
+		<br><br>
+		<p>Bootstrap Theme Made By <a href="https://www.w3schools.com" data-toggle="tooltip" title="Visit w3schools">https://www.w3schools.com</a></p>
+	</footer>
+
+	<br><br>
+
+</body>
+</html>
+
