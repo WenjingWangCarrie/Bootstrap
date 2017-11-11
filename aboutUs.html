@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+	<title>AboutUs</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</head>
+
+<body>
+	<div class="container">
+		<ul class="breadcrumb">
+			<li><a href="C:\home\wenjing\Bootstrap\home.html">Home</a></li>
+			<li><a href="C:\home\wenjing\Bootstrap\bootstrap_exer.html">Welcome</a></li>
+            <li><a href="C:\home\wenjing\Bootstrap\thumbnail.html">Resources</a></li>
+            <li><a href="C:\home\wenjing\Bootstrap\scrollSection.html">Explore</a></li>
+            <li class="active">About Us</li>
+        </ul>
+	</div>
+
+	<div class="container">
+		<h1>About Us</h1>
+		<br/>
+		<ul class="nav nav-tabs">
+		<!-- <ul class="nav nav-pills nav-stacked"> -->
+		<!-- <ul class="nav nav-pills nav-justified"> -->
+			<li class="active"><a data-toggle="tab" href="#menu1">Products</a></li>
+			<li><a data-toggle="tab" href="#menu2">Peer Tutor</a></li> 
+			<li><a data-toggle="tab" href="#menu3">Accomplishment</a></li>
+		</ul>
+
+		<br>
+
+		<div class="tab-content">
+			<div id="menu1" class="tab-pane fade in active">
+				<div class="center-blocked">
+					<p>We mainly provides four products which are <b>OO Programming</b>, <b>Web Progarmming</b>, <b>Query Language</b> and <b><mark>other courses</mark></b>, such as Math, English...</p>
+					<p>Click the Dropdown menu for more information</p>
+					<br/>
+				</div> 
+
+				<div class="dropdown">
+					<button type="button" class="btn btn-danger dropdown-toggle" data-toggle="dropdown">Dropdown
+						<span class="caret"></span>
+					</button>
+					<ul class="dropdown-menu">
+						<li><a href="#">OO Language</a></li>
+						<li><a href="#">Web Programming</a></li>
+						<li><a href="#">Query Language</a></li> 
+						<li class="divider"></li>
+						<li><a href="#">Others</a></li>
+					</ul>
+				</div>
+
+				<hr>
+				<p><b>Note:</b> If you want to apply for our peer tutor for the specified courses, you can find more information on the Peer Tutor page.</p>
+			</div>
+
+			<div id="menu2" class="tab-pane fade">
+				<p>Our tutors are from different places around the world, therefore, they can speak different languages. If you want to learn better, you can choose a mentor that speaks your language.</p>
+				<br/>
+
+    			<div class="col-md-3">
+    				<button type="button" class="btn btn-success" data-toggle="collapse" data-target="#cdemo">Mandarin</button>
+
+    				<div class="collapse" id="cdemo">
+    					<p>Name: Wenjing Wang</p>
+    					<p>Country: China</p>
+    					<p>Occupation: Computer Engineer</p>
+    				</div>
+
+    				<button type="button" class="btn btn-danger" data-toggle="collapse" data-target="#edemo">English</button>
+
+    				<div class="collapse" id="edemo">
+    					<p>Name: Carrie Liu</p>
+    					<p>Country: Canada</p>
+    		     		<p>Occupation: Teacher</p>
+    				</div>
+
+    				<button type="button" class="btn btn-warning" data-toggle="collapse" data-target="#bdemo">Bilingual</button>
+
+    				<div class="collapse" id="bdemo">
+    					<p>Name: Cai Wang</p>
+    					<p>Country: England</p>
+    			 		<p>Occupation: Manager</p>
+    				</div> 
+
+    			</div>  
+			</div> <!-- end of menu2 -->
+ 
+			<div id="menu3" class="tab-pane fade">
+				<p>Since we developed our TutorialSite, we helped a lot of students to study better and have good grades, also help them to find great jobs.</p>
+				<p>Here are some of the great accomplishments that our studnets got.</p>
+				<br/>
+
+				 <!-- Collapse Panel Accordion-->
+				<div class="panel-group" id="accordion">
+
+					<div class="panel panel-info">
+						<div class="panel-heading">
+							<h4 class="panel-title">
+								<a data-toggle="collapse" data-parent="#accordion" href="#collapse1">Accomplishments 1</a>
+							</h4>
+						</div>
+						<div class="panel-collapse collapse in" id="collapse1">
+							<div class="panel-body">
+								<p>Linda: I love this TutorialSite, it helps me to get over the difficulties on my study and solve all my problems to make me make progress everyday. Thanks TutorialSite! </p> 
+			            	</div>
+			            </div>
+			        </div>
+
+			        <div class="panel panel-info">
+						<div class="panel-heading">
+							<h4 class="panel-title">
+								<a data-toggle="collapse" data-parent="#accordion" href="#collapse2">Accomplishments 2</a>
+							</h4>
+						</div>
+						<div class="panel-collapse collapse" id="collapse2">
+							<div class="panel-body">
+								<p>Linlin: I love this TutorialSite, it helps me to get over the difficulties on my study and solve all my problems to make me make progress everyday. Thanks TutorialSite! </p> 
+			            	</div>
+			            </div>
+			        </div>
+
+			        <div class="panel panel-info">
+						<div class="panel-heading">
+							<h4 class="panel-title">
+								<a data-toggle="collapse" data-parent="#accordion" href="#collapse3">Accomplishments 3</a>
+							</h4>
+						</div>
+						<div id="collapse3" class="panel-collapse collapse">
+							<div class="panel-body">
+								<p>Krystional: I love this TutorialSite, it helps me to get over the difficulties on my study and solve all my problems to make me make progress everyday. Thanks TutorialSite! </p> 
+			            		<p>わたしは、あなたを愛しています</p>
+			            	</div>
+			            </div>
+			        </div>
+
+				</div> <!-- end of panel-group -->
+			</div> <!-- end of menu3 -->
+		
+        </div> <!-- end of tab-content -->
+    </div>
+
+</body>
+</html>
